@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Weather App</string>
+    <string name="enter_city">Enter City</string>
+    <string name="hourly_forecast">Hourly forecast</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="rain_chance">Rain Chance</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
 </resources>

@@ -1,64 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="100dp"
-    android:layout_height="wrap_content"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_gravity="center"
-    app:cardElevation="6dp"
-    android:background="@android:color/transparent"
-    app:cardCornerRadius="10dp"
-    android:layout_marginTop="4dp">
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/card_back">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/TVTime"
-        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/inter_medium"
         android:padding="4dp"
         android:text="Time"
         android:textColor="@color/white"
-        android:textAlignment="center"/>
+        android:textSize="@dimen/mediumTextSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/IVCondition"
+        app:layout_constraintStart_toStartOf="@+id/IVCondition"
+        app:layout_constraintTop_toBottomOf="@+id/IVCondition"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/TVTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="20"
+        android:textColor="@color/white"
+        android:textSize="@dimen/mediumTextSize"
+        app:layout_constraintBottom_toTopOf="@+id/IVCondition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/IVCondition"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:padding="4dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintEnd_toEndOf="@+id/TVTemperature"
+        app:layout_constraintStart_toStartOf="@+id/TVTemperature"
+        app:layout_constraintTop_toBottomOf="@+id/TVTemperature"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/TVWindSpeed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/TVTime"
-        android:foregroundGravity="center"
-        android:text="20"
+        android:layout_below="@id/IVCondition"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="4dp"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="13"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="20sp" />
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
 
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_below="@id/TVTemperature"
-            android:id="@+id/IVCondition"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="5dp"
-            android:padding="4dp"
-            android:src="@mipmap/ic_launcher"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:layout_centerHorizontal="true"
-            android:gravity="center"
-            android:layout_below="@id/IVCondition"
-            android:id="@+id/TVWindSpeed"
-            android:textColor="@color/white"
-            android:text="13"
-            android:padding="3dp"
-            android:layout_margin="4dp"/>
-
-
-    </RelativeLayout>
-
-</androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

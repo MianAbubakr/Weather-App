@@ -1,0 +1,16 @@
+<resources>
+
+    <dimen name="xSmallTextSize">10sp</dimen>
+    <dimen name="smallTextSize">12sp</dimen>
+    <dimen name="mediumTextSize">15sp</dimen>
+    <dimen name="normalTextSize">18sp</dimen>
+    <dimen name="bigTextSize">20sp</dimen>
+    <dimen name="largeTextSize">22sp</dimen>
+    <dimen name="xLargeTextSize">24sp</dimen>
+    <dimen name="xXLargeTextSize">27sp</dimen>
+    <dimen name="xXXLargeTextSize">33sp</dimen>
+    <dimen name="xXXXLargeTextSize">60sp</dimen>
+
+    <dimen name="tool_bar_height">35dp</dimen>
+
+</resources>

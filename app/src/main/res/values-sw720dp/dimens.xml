@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <dimen name="xSmallTextSize">13sp</dimen>
+    <dimen name="smallTextSize">15sp</dimen>
+    <dimen name="mediumTextSize">18sp</dimen>
+    <dimen name="normalTextSize">22sp</dimen>
+    <dimen name="bigTextSize">23sp</dimen>
+    <dimen name="largeTextSize">25sp</dimen>
+    <dimen name="xLargeTextSize">28sp</dimen>
+    <dimen name="xXLargeTextSize">30sp</dimen>
+    <dimen name="xXXLargeTextSize">36sp</dimen>
+    <dimen name="xXXXLargeTextSize">60sp</dimen>
+
+    <dimen name="tool_bar_height">40dp</dimen>
+
+
+</resources>
